@@ -36,6 +36,7 @@ body {
 /*---ESTILOS HEADER---*/
 /*-- se aplico flex y box modeling --*/
 .header {
+    z-index: 900;
     background-color: white;
     height: 10.2rem;
     width: 100%;
@@ -457,7 +458,7 @@ main ul li a.active {
 /* estilos contacto.html section */
 .contacto {
     text-align: center;
-    margin: 11rem auto;
+    margin: 4rem auto;
     font-family: 'NotoSans-ThinItalic'arial, sans-serif;
     font-size: 4rem;
     letter-spacing: 1rem;
@@ -465,8 +466,22 @@ main ul li a.active {
 }
 
 /* estilos contacto.html main */
+
+.aparecer{
+    animation-duration: 10s;
+    animation-name: aparecer;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+} 
+
 .respuesta {
-    border-style: none;
+    border-style:none;
     position: relative;
     margin: auto;
     padding: 2rem;

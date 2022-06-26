@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>MAGIN | Contacto</title>
+
+</head>
+
+<body>
+    <div id="container">
+        <!-- header logo + nav -->
+        <header class="header">
+            <nav class="nav">
+                <!--logo-->
+                <a href="../index.html">
+                    <img class="logo" src="../assets/img/magin1.png" alt="Logo">
+                </a>
+                <!--nav-->
+                <input type="checkbox" id="menu_boton">
+                <label for="menu_boton" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="menu">
+                    <li class="menu_item"><a href="../index.html">Home</a></li>
+                    <li class="menu_item"><a href="magin.html">Nosotros</a></li>
+                    <li class="menu_item"><a href="servicios.html">Servicios</a></li>
+                    <li class="menu_item"><a href="ubicacion.html">Ubicación</a></li>
+                    <li class="menu_item"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- contenido información de contacto -->
+        <section>
+            <h2 class="contacto">CONTACTO</h2>
+        </section>
+        <!-- formulario de contacto -->
+        <main>
+            <div>
+                <form action="respuesta.html" method="post">
+                    <fieldset class="respuesta">
+                        <p>
+                            <label class="campo_form" for="Nombre y Apellido">Nombre y Apellido</label>
+                            <input class="dato_form" type="text" name="Nombre y Apellido"
+                                placeholder="Escriba su nombre y apellido">
+                        </p>
+                        <p>
+                            <label class="campo_form" for="Empresa">Empresa</label>
+                            <input class="dato_form" type="text" name="Empresa" placeholder="Razón Social">
+                        </p>
+                        <p>
+                            <label class="campo_form" for="Cargo">Cargo</label>
+                            <input class="dato_form" type="text" name="Cargo"
+                                placeholder="Cargo o función">
+                        </p>
+                        <p>
+                            <label class="campo_form" for="Email">E-mail</label>
+                            <input class="dato_form" type="email" name="Email" placeholder="Escriba su E-mail">
+                        </p>
+                        <div class="interes">
+                            <p>
+                                <label class="campo_form--interes" for="intereses">Marque las areas de su interes</label>
+                            </p>
+                            <p>
+                                <input class="check" type="checkbox" name="intereses" id="Producto" value="Producto">
+                                <label class="dato_form" for="Producto">Producto</label>
+                            </p>
+                            <p>
+                                <input class="check" type="checkbox" name="intereses" id="Moldes" value="Moldes">
+                                <label class="dato_form" for="Moldes">Moldes</label>
+                            </p>
+                            <p>
+                                <input class="check" type="checkbox" name="intereses" id="Matrices" value="Matrices">
+                                <label class="dato_form" for="Matrices">Matrices</label>
+                            </p>
+                            <p>
+                                <input class="check" type="checkbox" name="intereses" id="Dispositivos" value="Dispositivos">
+                                <label class="dato_form" for="Dispositivos">Dispositivos</label>
+                            </p>
+                        </div>
+
+                        <label class="campo_form" for="Mensaje">Escriba su mensaje</label>
+                        <textarea class="dato_form" name="Mensaje" id="" cols="40" rows="5"
+                            placeholder="Deje su mensaje"></textarea>
+
+                        <div class="botones">
+                            <input class="boton" type="reset" value="Cancelar">
+                            <input class="boton" type="submit" value="Enviar">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+
+        <!-- footer logo + rrss + contacto -->
+        <footer class="footer_pie">
+            <div class="footer_conteiner">
+                <!--logo-->
+                <span class="footer_logo">
+                    <img class="logo" src="../assets/img/magin1.png" alt="Logo">
+                </span>
+                <!--redes-->
+                <span class="footer_social">
+                    <a class="social_item" href="https://twitter.com" target="_blank">
+                        <img class="social_logo" src="../assets/img/twitter.png" alt="Twitter">
+                    </a>
+                    <a class="social_item" href="https://www.facebook.com" target="_blank">
+                        <img class="social_logo" src="../assets/img/facebook.png" alt="Facebook">
+                    </a>
+                    </a>
+                    <a class="social_item" href="https://www.youtube.com" target="_blank">
+                        <img class="social_logo" src="../assets/img/youtube.png" alt="Youtube">
+                    </a>
+                    <a class="social_item" href="https://www.linkedin.com" target="_blank">
+                        <img class="social_logo" src="../assets/img/linkedin.png" alt="Linkedin">
+                    </a>
+                    <a class="social_item" href="https://www.google.com" target="_blank">
+                        <img class="social_logo" src="../assets/img/google.png" alt="Google">
+                    </a>
+                </span>
+                <!--contacto-->
+                <span class="footer_datos">
+                    <p class="direccion">
+                        <p>Bonifacini XXXX, Caseros</p>
+                        <p>Buenos Aires - Argentina</p>
+                        <p>Tel: 011 XXXX-XXXX</p>
+                        <p>Email: info@maginsrl.com.ar</p>
+                    </p>
+                    <p class="whatsapp">
+                        <a href="http://wa.me" target="_blank">
+                            <img class="whatsapp_logo" src="../assets/img/whatsapp.png" alt="Logo"></a>
+                    </p>
+                </span>
+            </div>
+            <div class="copy">
+                Copyright 2022 | Diseño web y programación by Coderhouse
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

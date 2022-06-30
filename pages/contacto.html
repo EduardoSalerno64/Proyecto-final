@@ -8,6 +8,10 @@
     <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="shortcut icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" href="../bootstrap/ccs/bootstrap.min.css">
+    <script src="../bootstrap/js/jquery.slim.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>MAGIN | Contacto</title>
 
@@ -41,61 +45,43 @@
         <section>
             <h2 class="contacto animate__animated animate__zoomIn">CONTACTO</h2>
         </section>
-        <!-- formulario de contacto -->
+
+        <!-- formulario con bootsrap -->
         <main>
-            <div>
-                <form action="respuesta.html" method="post">
-                    <fieldset class="respuesta aparecer">
-                        <p>
-                            <label class="campo_form" for="Nombre y Apellido">Nombre y Apellido</label>
-                            <input class="dato_form" type="text" name="Nombre y Apellido"
-                                placeholder="Escriba su nombre y apellido">
-                        </p>
-                        <p>
-                            <label class="campo_form" for="Empresa">Empresa</label>
-                            <input class="dato_form" type="text" name="Empresa" placeholder="Razón Social">
-                        </p>
-                        <p>
-                            <label class="campo_form" for="Cargo">Cargo</label>
-                            <input class="dato_form" type="text" name="Cargo"
-                                placeholder="Cargo o función">
-                        </p>
-                        <p>
-                            <label class="campo_form" for="Email">E-mail</label>
-                            <input class="dato_form" type="email" name="Email" placeholder="Escriba su E-mail">
-                        </p>
-                        <div class="interes">
-                            <p>
-                                <label class="campo_form--interes" for="intereses">Marque las areas de su interes</label>
-                            </p>
-                            <p>
-                                <input class="check" type="checkbox" name="intereses" id="Producto" value="Producto">
-                                <label class="dato_form" for="Producto">Producto</label>
-                            </p>
-                            <p>
-                                <input class="check" type="checkbox" name="intereses" id="Moldes" value="Moldes">
-                                <label class="dato_form" for="Moldes">Moldes</label>
-                            </p>
-                            <p>
-                                <input class="check" type="checkbox" name="intereses" id="Matrices" value="Matrices">
-                                <label class="dato_form" for="Matrices">Matrices</label>
-                            </p>
-                            <p>
-                                <input class="check" type="checkbox" name="intereses" id="Dispositivos" value="Dispositivos">
-                                <label class="dato_form" for="Dispositivos">Dispositivos</label>
-                            </p>
+            <div class="respuesta aparecer col-12  d-flex justify-content-center">
+                <div class="hoja">
+                    <form action="respuesta.html" method="post">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Nombre y Apellido</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput"
+                                placeholder="Escriba su Nombre y Apellido">
                         </div>
-
-                        <label class="campo_form" for="Mensaje">Escriba su mensaje</label>
-                        <textarea class="dato_form" name="Mensaje" id="" cols="40" rows="5"
-                            placeholder="Deje su mensaje"></textarea>
-
-                        <div class="botones">
-                            <input class="boton" type="reset" value="Cancelar">
-                            <input class="boton" type="submit" value="Enviar">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Empresa</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput"
+                                placeholder="Nombre o Razón Social">
                         </div>
-                    </fieldset>
-                </form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Cargo</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput"
+                                placeholder="Cargo o función que desempeña">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">E-mail</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput"
+                                placeholder="Escriba su E-mail">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-12 form-group" for="Mensaje">Escriba su mensaje</label>
+                            <textarea class="form-control" name="Mensaje" id="" cols="40" rows="5"
+                                placeholder="Deje su mensaje"></textarea>
+                        </div>
+                        <div class="linea_boton">
+                            <input class="col-4 btn btn-boton" type="reset" value="Cancelar">
+                            <input class="col-4 btn btn-boton" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
             </div>
         </main>
 

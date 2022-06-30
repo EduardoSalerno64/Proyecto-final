@@ -22,7 +22,7 @@ html {
 
 body {
     background-color: #e6e6e6;
-    padding: 10.2rem 0rem 0 0rem;
+    padding: 10rem 0rem 0 0rem;
 }
 
 #container {
@@ -36,9 +36,9 @@ body {
 /*---ESTILOS HEADER---*/
 /*-- se aplico flex y box modeling --*/
 .header {
-    z-index: 900;
+    z-index: 100;
     background-color: white;
-    height: 10.2rem;
+    height: 10rem;
     width: 100%;
     position: fixed;
     top: 0;
@@ -68,7 +68,7 @@ body {
     flex-direction: column;
     margin-right: 1rem;
     left: -100%;
-    top: 10.2rem;
+    top: 10rem;
     width: 100%;
     list-style: none;
     background-color: white;
@@ -102,11 +102,12 @@ li a.active {
 .checkbtn {
     color: black;
     background-color: white;
-    font-size: 6rem;
+    font-size: 4rem;
     border: none;
-    padding: 2rem 2rem 1rem 2rem;
+    padding: 1rem 2rem 1rem 2rem;
     display: block;
     margin-right: 1rem;
+    margin-bottom: 0;
     border-radius: 1.5rem;
 }
 
@@ -312,7 +313,8 @@ h2 {
     letter-spacing: 1rem;
     font-weight: bold;
 }
-
+/* estilos servicios.html main */
+/*-- se aplico grid --*/
 .serv_par {
     padding: 4rem;
     margin: 0 auto;
@@ -346,7 +348,7 @@ h2 {
 }
 
 h3 {
-    text-align: left;
+    text-align: center;
     margin: 2rem auto;
     font-family: 'NotoSans-ThinItalic'arial, sans-serif;
     font-size: 3rem;
@@ -403,6 +405,7 @@ main ul li a.active {
     justify-content: center;
     width: auto;
     border: solid 6px darkgray;
+    box-shadow: 0 10px 10px black;
 }
 
 .title_her {
@@ -413,26 +416,27 @@ main ul li a.active {
     font-weight: bold;
 }
 
+/*--mod estilo tabla de bootstrap--*/
 #carac {
     display: none;
-    padding: 4rem;
-    margin: 0 auto;
-    width: auto;
-    /* max-width: 1200px; */
-    text-align: center;
-    font-size: 2rem;
-    line-height: 3rem;
-    text-align: left;
-}
-
-.tabla {
-    margin: 1rem 0 1rem 0;
     padding: 2rem;
-    width: auto;
-    /* max-width: 1200px; */
+    margin: 0 auto;
     font-size: 2rem;
     line-height: 2rem;
-    text-align: left;
+}
+
+.table thead th {
+    vertical-align:top;
+}
+
+.table {
+    border: solid 6px gray;
+    background-color: white;
+    box-shadow: 0 10px 10px black;
+}
+
+.table .thead-light th{
+    background-color:darkgray;
 }
 
 /*---------------------------------*/
@@ -467,6 +471,7 @@ main ul li a.active {
 
 /* estilos contacto.html main */
 
+/*--mod estilo formulario de bootstrap--*/
 .aparecer{
     animation-duration: 10s;
     animation-name: aparecer;
@@ -478,69 +483,57 @@ main ul li a.active {
     50% {
         opacity: 1;
     }
-} 
+}
 
-.respuesta {
-    border-style:none;
-    position: relative;
-    margin: auto;
+.hoja {
+    border: solid 1rem grey;
+    border-radius: 3rem;
+    background-color: darkgrey;
     padding: 2rem;
-    width: 100%;
-    background-color: #e6e6e6;
-    text-align: center;
+    margin-bottom: 4rem;
+    box-shadow: 0 10px 10px black;
 }
 
-.campo_form {
+.form-group{
+    text-align: center;
     padding: 1rem;
     font-family: 'NotoSans-ThinItalic'arial, sans-serif;
     font-size: 2rem;
     font-weight: bold;
 }
 
-.dato_form {
-    position: relative;
-    margin: 1rem;
-    width: 96%;
-    text-align: center;
+.form-control {
+    text-align: start;
     padding: 1rem;
     font-family: 'NotoSans-ThinItalic'arial, sans-serif;
     font-size: 2rem;
-    border-style: none;
     border-radius: 1rem;
 }
 
-.interes {
-    display: none;
-    position: relative;
-    padding: 2rem 1rem 2rem 1rem;
+.linea_boton {
+    display:flex;
+    justify-content: space-around;
+    margin: 3rem 0 1rem 0;
 }
 
-.campo_form--interes {
-    font-family: 'NotoSans-ThinItalic'arial, sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.check {
-    text-align: left;
-    width: 2rem;
-    height: 2rem;
-}
-
-.botones {
-    text-align: center;
-}
-
-.boton {
-    margin: 1rem 3rem 1rem 3rem;
+.btn-boton {
+    margin: 1rem 1rem 1rem 1rem;
     padding: 1rem;
     font-family: 'NotoSans-ThinItalic'arial, sans-serif;
     font-size: 2rem;
     font-weight: bold;
-    width: 20rem;
-    height: auto;
     border-radius: 1rem;
-    background-color: darkgray;
+    border:solid 0.5rem blue;
+    background:white;
+    color:blue;
+}
+
+.btn:hover{
+    background: blue;
+    color: white;
+    transition: 0.5s ease all;
+    transform: scale(1, 1);
+    box-shadow: 0 10px 10px black;
 }
 
 /*---------------------------------*/
@@ -732,22 +725,7 @@ footer {
 
     #carac {
         display: block;
-        padding: 4rem;
-        margin: 0 auto;
-        width: auto;
-        text-align: center;
-        font-size: 2rem;
-        line-height: 3rem;
-        text-align: left;
-    }
-
-    .tabla {
-        margin: 1rem 0 1rem 0;
-        padding: 2rem;
-        width: auto;
-        font-size: 2rem;
-        line-height: 2rem;
-        text-align: left;
+        max-width: 1200px;
     }
 
 
@@ -756,7 +734,6 @@ footer {
     /* estilos contacto.html section */
     .contacto {
         text-align: center;
-        margin: 10rem auto;
         font-family: 'NotoSans-ThinItalic'arial, sans-serif;
         font-size: 6rem;
         letter-spacing: 1rem;
@@ -867,37 +844,6 @@ footer {
     .contacto {
         margin: 4rem auto;
         font-size: 8rem;
-    }
-
-    .respuesta {
-        padding: 0 25%;
-        text-align: left;
-    }
-
-    .campo_form {
-        line-height: 6rem;
-        font-size: 2.5rem;
-    }
-
-    .dato_form {
-        text-align: left;
-        padding: 2rem;
-        border-radius: 1.5rem;
-    }
-
-    .interes {
-        display: block;
-        line-height: 3rem;
-    }
-
-    .campo_form--interes {
-        line-height: 6rem;
-    }
-
-    .boton {
-        margin: 3rem 3rem 3rem 3rem;
-        font-size: 3rem;
-        border-radius: 1.5rem;
     }
 
     /*---------------------------------*/

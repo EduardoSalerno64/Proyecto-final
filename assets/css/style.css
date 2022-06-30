@@ -181,104 +181,36 @@ h2 {
 }
 
 /* estilos magin.html main */
-/*-- se aplico grid --*/
-.grid_descripcion {
-    margin: auto;
-    padding: 2rem;
-    display: grid;
-    grid-template-rows: repeat(6, 38rem);
-    width: auto;
-    gap: 2rem;
-    grid-area:
-        "nosotros_par"
-        "nosotros_img"
-        "objetivos_par"
-        "objetivos_img"
-        "vision_par"
-        "vision_img"
-    ;
-}
-
-.nosotros_par {
+/*--mod estilo main de bootstrap--*/
+.parrafo {
+    padding: 2rem 4rem 2rem 4rem;
+    width: 100%;
+    height:100%;
     border-radius: 2rem;
     background-color: white;
     border: solid 6px darkgray;
     box-shadow: 0 10px 10px black;
 }
 
-.nosotros_img {
-    border-radius: 2rem;
-    padding: 2rem;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    border: solid 6px darkgray;
-    box-shadow: 0 10px 10px black;
-}
-
-.objetivos_par {
+.imagen {
+    padding: 2rem 4rem 2rem 4rem;
     border-radius: 2rem;
     background-color: white;
-    border: solid 6px darkgray;
-    box-shadow: 0 10px 10px black;
-}
-
-.objetivos_img {
-    border-radius: 2rem;
-    padding: 2rem;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    border: solid 6px darkgray;
-    box-shadow: 0 10px 10px black;
-}
-
-.vision_par {
-    border-radius: 2rem;
-    background-color: white;
-    border: solid 6px darkgray;
-    box-shadow: 0 10px 10px black;
-}
-
-.vision_img {
-    border-radius: 2rem;
-    padding: 2rem;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
+    width: 100%;
+    height:100%;
     border: solid 6px darkgray;
     box-shadow: 0 10px 10px black;
 }
 
 .titulo {
     padding: 3rem;
-    width: 100%;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     font-weight: bold;
-    display: inline-block;
 }
 
 .descripcion_parrafo {
-    padding: 0 3rem 3rem 3rem;
-    width: 100%;
-    font-size: 1.5rem;
-    line-height: rem;
-    text-align: left;
-}
-
-.descripcion_imagen {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    font-size: 2rem;
 }
 
 /*---------------------------------*/
@@ -427,12 +359,29 @@ main ul li a.active {
 /* estilos ubicacion.html */
 
 /* estilos ubicacion.html main */
+/*--mod estilo de bootstrap--*/
 .img_ubicacion {
-    margin: 0 auto 4rem auto;
-    border: 0;
-    text-align: center;
-    width: 80%;
-    border: 2px solid black;
+    border: solid 6px gray;
+    box-shadow: 0 10px 10px black;
+    border-radius: 2rem;
+}
+
+.carousel {
+    border: solid 6px gray;
+    box-shadow: 0 10px 10px black;
+    border-radius: 2rem;
+}
+
+.carousel-control-prev-icon {
+    height: 4rem;
+    border-radius: 1.5rem;
+    background-color: crimson;
+}
+
+.carousel-control-next-icon {
+    height: 4rem;
+    border-radius: 1.5rem;
+    background-color: crimson;
 }
 
 /*---------------------------------*/
@@ -451,12 +400,12 @@ main ul li a.active {
 }
 
 /* estilos contacto.html main */
-
 /*--mod estilo formulario de bootstrap--*/
 .aparecer{
     animation-duration: 10s;
     animation-name: aparecer;
 }
+
 @keyframes aparecer {
     0% {
         opacity: 0;
@@ -632,7 +581,6 @@ footer {
         font-size: 6rem;
         font-weight: bold;
     }
-
     /*---------------------------------*/
 
     /*---------------------------------*/
@@ -641,38 +589,6 @@ footer {
     h2 {
         font-size: 6rem;
     }
-
-    /* estilos magin.html main */
-    .grid_descripcion {
-        margin: auto;
-        padding: 2rem 4rem 2rem 2rem;
-        display: grid;
-        grid-template-rows: repeat(3, 35rem);
-        grid-template-columns: 50% 50%;
-        width: auto;
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        gap: 2rem;
-        grid-area:
-            "nosotros_par   nosotros_img"
-            "objetivos_par  objetivos_img"
-            "vision_par     vision_img"
-        ;
-    }
-
-    .izq:hover {
-        transition: 1s ease-in all;
-        transform: translate(50%, 0) scale(1.5, 1.5);
-        box-shadow: 0 10px 10px black;
-    }
-
-    .der:hover {
-        transition: 1s ease-in all;
-        transform: translate(-50%, 0) scale(1.5, 1.5);
-        box-shadow: 0 10px 10px black;
-    }
-
     /*---------------------------------*/
 
     /*---------------------------------*/
@@ -696,6 +612,18 @@ footer {
         ;
     }
 
+    .izq:hover {
+        transition: 1s ease-in all;
+        transform: translate(50%, 0) scale(1.5, 1.5);
+        box-shadow: 0 10px 10px black;
+    }
+
+    .der:hover {
+        transition: 1s ease-in all;
+        transform: translate(-50%, 0) scale(1.5, 1.5);
+        box-shadow: 0 10px 10px black;
+    }
+
     h3 {
         font-size: 3.5rem;
     }
@@ -708,7 +636,7 @@ footer {
         display: block;
         max-width: 1200px;
     }
-
+    /*---------------------------------*/
 
     /*---------------------------------*/
     /* estilos contacto.html */
@@ -720,7 +648,6 @@ footer {
         letter-spacing: 1rem;
         font-weight: bold;
     }
-
     /*---------------------------------*/
 
 
@@ -734,7 +661,6 @@ footer {
     .mensaje2 {
         font-size: 3rem;
     }
-
     /*---------------------------------*/
 }
 
@@ -797,6 +723,7 @@ footer {
         display: block;
         margin: 0 auto 0 0;
     }
+    /*---------------------------------*/
 
     /*---------------------------------*/
     /* estilos magin.html */
@@ -804,7 +731,6 @@ footer {
     h2 {
         font-size: 8rem;
     }
-
     /*---------------------------------*/
 
     /*---------------------------------*/
@@ -814,7 +740,6 @@ footer {
         margin: 4rem auto;
         font-size: 8rem;
     }
-
     /*---------------------------------*/
 
     /*---------------------------------*/
@@ -827,6 +752,5 @@ footer {
     .mensaje2 {
         font-size: 3rem;
     }
-
     /*---------------------------------*/
 }

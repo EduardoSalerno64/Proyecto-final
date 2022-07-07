@@ -1,0 +1,69 @@
+// ESTILO MAIN
+// mod estilo de bootstrap
+.respuesta {
+    .hoja {
+        border: solid 1rem grey;
+        border-radius: 2rem;
+        background-color: darkgrey;
+        padding: 2rem;
+        margin-bottom: 4rem;
+        box-shadow: 0 10px 10px black;
+
+        .form-group {
+            text-align: center;
+            padding: 1rem;
+            font-family: 'NotoSans-ThinItalic'arial, sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+
+            .form-control {
+                text-align: start;
+                padding: 1rem;
+                font-family: 'NotoSans-ThinItalic'arial, sans-serif;
+                font-size: 2rem;
+                border-radius: 1rem;
+            }
+        }
+
+        .linea_boton {
+            display: flex;
+            justify-content: space-around;
+            margin: 3rem 0 1rem 0;
+
+            .btn-boton {
+                margin: 1rem 1rem 1rem 1rem;
+                padding: 1rem;
+                font-family: 'NotoSans-ThinItalic'arial, sans-serif;
+                font-size: 2rem;
+                font-weight: bold;
+                border-radius: 1rem;
+                border: solid 0.5rem blue;
+                background: white;
+                color: blue;
+            }
+
+            .btn:hover {
+                background: blue;
+                color: white;
+                transition: 0.5s ease all;
+                transform: scale(1.2, 1.2);
+                box-shadow: 0 10px 10px black;
+            }
+        }
+    }
+}
+
+.aparecer {
+    animation-duration: 10s;
+    animation-name: aparecer;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}

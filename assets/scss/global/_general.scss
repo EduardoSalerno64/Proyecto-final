@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto-black';
+    src: url('../assets/font/Roboto-black.ttf');
+}
+
+@font-face {
+    font-family: 'NotoSans-ThinItalic';
+    src: url('../assets/font/NotoSans-ThinItalic.ttf');
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto-black', sans-serif;
+
+    body {
+        background-color: #e6e6e6;
+        padding: 10rem 0rem 0 0rem;
+
+        @media screen and (min-width:1024px) {
+            body {
+                padding: 14rem 0rem 0 0rem;
+            }
+        }
+
+        #container {
+            display: grid;
+            height: 100vh;
+            width: 100%;
+            grid-template-rows: auto;
+        }
+    }
+}
+
+h1 {
+    text-align: center;
+    margin: 5rem auto 4rem auto;
+    font-family: 'NotoSans-ThinItalic'arial, sans-serif, italic;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    margin: 5rem auto 4rem auto;
+    font-family: 'NotoSans-ThinItalic'arial, sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+
+// MEDIA QUERIES
+// TABLET
+@media screen and (min-width: 768px) {
+    h1 {
+        margin: 7rem auto 6rem auto;
+        font-size: 6rem;
+    }
+
+    h2 {
+        margin: 7rem auto 6rem auto;
+        font-size: 6rem;
+    }
+}
+
+
+// DESKTOP
+@media screen and (min-width:1024px) {
+    h1 {
+        margin: 10rem auto 6rem auto;
+        font-size: 8rem;
+    }
+
+    h2 {
+        margin: 10rem auto 6rem auto;
+        font-size: 8rem;
+    }
+}

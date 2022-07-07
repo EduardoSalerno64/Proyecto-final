@@ -1,0 +1,59 @@
+.logo_din--respuesta {
+    width: 20rem;
+    left:50%;
+    position: relative;
+    top: 0rem;
+    transform: translate(-50%, 0%);
+}
+
+.logo_din--respuesta:hover {
+    box-shadow: 0 40px 20px black;
+}
+
+.mensaje1 {
+    margin: 6rem auto 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+    font-family: 'Roboto-black', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.mensaje2 {
+    margin: auto;
+    padding: 0 8rem 8rem 8rem;
+    text-align: center;
+    font-family: 'Roboto-black', sans-serif;
+    font-size: 2rem;
+}
+
+// MEDIA QUERIES
+// TABLET
+@media screen and (min-width: 768px) {
+    .logo_din--respuesta {
+        width: 30rem;
+    }
+
+    .mensaje1 {
+        margin: 10rem auto 6rem auto;
+        padding: 0rem 3rem;
+        font-size: 5rem;
+    }
+
+    .mensaje2 {
+        font-size: 3rem;
+    }
+
+}
+
+// DESKTOP
+@media screen and (min-width:1024px) {
+    .mensaje1 {
+        font-size: 5rem;
+    }
+
+    .mensaje2 {
+        font-size: 3rem;
+    }
+
+}

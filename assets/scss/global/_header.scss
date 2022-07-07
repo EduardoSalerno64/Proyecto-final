@@ -1,0 +1,145 @@
+// Se aplico flex y box modeling
+.header {
+    z-index: 100;
+    background-color: white;
+    height: 10rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo {
+    height: 10rem;
+    padding: 0 2rem;
+}
+
+.menu {
+    flex-direction: column;
+    margin-right: 1rem;
+    left: -100%;
+    top: 10rem;
+    width: 100%;
+    list-style: none;
+    background-color: white;
+    position: fixed;
+    text-align: center;
+    transition: all .5s;
+}
+
+.menu_item {
+    display: block;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem;
+    text-transform: uppercase;
+    border-top: 1px solid darkgrey;
+    border-bottom: 1px solid darkgrey;
+    line-height: 3rem;
+}
+
+li a:hover,
+li a.active {
+    background: none;
+    color: rgb(187, 243, 187);
+}
+
+.menu_item:hover {
+    background-color: darkgray;
+    transition: 0.5s ease all;
+}
+
+.checkbtn {
+    color: black;
+    background-color: white;
+    font-size: 4rem;
+    border: none;
+    padding: 1rem 2rem 1rem 2rem;
+    display: block;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    border-radius: 1.5rem;
+}
+
+.checkbtn:hover {
+    background-color: darkgray;
+}
+
+.checkbtn {
+    display: block;
+}
+
+#menu_boton {
+    display: none;
+}
+
+#menu_boton:checked~ul {
+    left: 0;
+}
+
+header label:hover {
+    cursor: pointer;
+    float: right;
+    background-color: darkgray;
+}
+
+// MEDIA QUERIES
+// DESKTOP
+@media screen and (min-width:1024px) {
+    header label {
+        display: none;
+    }
+
+    body {
+        padding: 14rem 0rem 0 0rem;
+    }
+
+    .header {
+        height: 14rem;
+    }
+
+    .menu {
+        top: 14rem;
+    }
+
+    .logo {
+        height: 14rem;
+    }
+
+    .checkbtn {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        margin-right: 2rem;
+        justify-content: end;
+        align-items: center;
+        float: right;
+        height: auto;
+        padding: 0;
+        position: static;
+        width: auto;
+    }
+
+    .menu_item {
+        border: none;
+        margin: 0 1rem 0 1rem;
+        border-radius: 1rem;
+    }
+}

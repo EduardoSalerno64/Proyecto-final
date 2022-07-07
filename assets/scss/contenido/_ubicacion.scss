@@ -1,0 +1,35 @@
+// ESTILO MAIN
+// mod estilo de bootstrap
+.conteiner {
+    .row {
+        .img_ubicacion {
+            background-color: white;
+            border: solid 1rem gray;
+            box-shadow: 0 10px 10px black;
+            border-radius: 2rem;
+        }
+    }
+}
+
+.conteiner {
+    .row {
+        .carousel {
+            background-color: white;
+            border: solid 1rem gray;
+            box-shadow: 0 10px 10px black;
+            border-radius: 2rem;
+
+            .carousel-control-prev-icon {
+                height: 6rem;
+                border-radius: 1.5rem;
+                background-color: crimson;
+            }
+
+            .carousel-control-next-icon {
+                height: 6rem;
+                border-radius: 1.5rem;
+                background-color: crimson;
+            }
+        }
+    }
+}

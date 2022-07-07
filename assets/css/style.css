@@ -156,9 +156,14 @@ h1 {
     width: 100%;
 }
 
+.row {
+    margin: 2rem auto;
+}
+
 .info_text--descripcion {
     border: solid 1rem grey;
-    border-radius: 3rem;
+    background-color: white;
+    border-radius: 2rem;
     width: 100%;
     height: 100%;
     text-align: left;
@@ -185,10 +190,10 @@ h2 {
 .parrafo {
     padding: 2rem 4rem 2rem 4rem;
     width: 100%;
-    height:100%;
+    height: 100%;
     border-radius: 2rem;
     background-color: white;
-    border: solid 6px darkgray;
+    border: solid 1rem darkgray;
     box-shadow: 0 10px 10px black;
 }
 
@@ -197,8 +202,8 @@ h2 {
     border-radius: 2rem;
     background-color: white;
     width: 100%;
-    height:100%;
-    border: solid 6px darkgray;
+    height: 100%;
+    border: solid 1rem darkgray;
     box-shadow: 0 10px 10px black;
 }
 
@@ -214,8 +219,6 @@ h2 {
 }
 
 /*---------------------------------*/
-
-/*---------------------------------*/
 /* estilos servicios.html */
 /* estilos servicios.html section */
 h2 {
@@ -226,6 +229,7 @@ h2 {
     letter-spacing: 1rem;
     font-weight: bold;
 }
+
 /* estilos servicios.html main */
 /*-- se aplico grid --*/
 .serv_par {
@@ -290,8 +294,8 @@ h3 {
 }
 
 .serv_menu {
-padding: 0;
-list-style: none;
+    padding: 0;
+    list-style: none;
 }
 
 main ul li a:hover,
@@ -317,7 +321,7 @@ main ul li a.active {
     flex-direction: column-reverse;
     justify-content: center;
     width: auto;
-    border: solid 6px darkgray;
+    border: solid 1rem darkgray;
     box-shadow: 0 10px 10px black;
 }
 
@@ -339,20 +343,18 @@ main ul li a.active {
 }
 
 .table thead th {
-    vertical-align:top;
+    vertical-align: top;
 }
 
 .table {
-    border: solid 6px gray;
+    border: solid 1rem gray;
     background-color: white;
     box-shadow: 0 10px 10px black;
 }
 
-.table .thead-light th{
-    background-color:darkgray;
+.table .thead-light th {
+    background-color: darkgray;
 }
-
-/*---------------------------------*/
 
 
 /*---------------------------------*/
@@ -361,34 +363,33 @@ main ul li a.active {
 /* estilos ubicacion.html main */
 /*--mod estilo de bootstrap--*/
 .img_ubicacion {
-    border: solid 6px gray;
+    background-color: white;
+    border: solid 1rem gray;
     box-shadow: 0 10px 10px black;
     border-radius: 2rem;
 }
 
 .carousel {
-    border: solid 6px gray;
+    background-color: white;
+    border: solid 1rem gray;
     box-shadow: 0 10px 10px black;
     border-radius: 2rem;
 }
 
 .carousel-control-prev-icon {
-    height: 4rem;
+    height: 6rem;
     border-radius: 1.5rem;
     background-color: crimson;
 }
 
 .carousel-control-next-icon {
-    height: 4rem;
+    height: 6rem;
     border-radius: 1.5rem;
     background-color: crimson;
 }
 
 /*---------------------------------*/
-
-/*---------------------------------*/
 /* estilos contacto.html */
-
 /* estilos contacto.html section */
 .contacto {
     text-align: center;
@@ -401,7 +402,7 @@ main ul li a.active {
 
 /* estilos contacto.html main */
 /*--mod estilo formulario de bootstrap--*/
-.aparecer{
+.aparecer {
     animation-duration: 10s;
     animation-name: aparecer;
 }
@@ -410,6 +411,7 @@ main ul li a.active {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
@@ -417,14 +419,14 @@ main ul li a.active {
 
 .hoja {
     border: solid 1rem grey;
-    border-radius: 3rem;
+    border-radius: 2rem;
     background-color: darkgrey;
     padding: 2rem;
     margin-bottom: 4rem;
     box-shadow: 0 10px 10px black;
 }
 
-.form-group{
+.form-group {
     text-align: center;
     padding: 1rem;
     font-family: 'NotoSans-ThinItalic'arial, sans-serif;
@@ -441,7 +443,7 @@ main ul li a.active {
 }
 
 .linea_boton {
-    display:flex;
+    display: flex;
     justify-content: space-around;
     margin: 3rem 0 1rem 0;
 }
@@ -453,36 +455,37 @@ main ul li a.active {
     font-size: 2rem;
     font-weight: bold;
     border-radius: 1rem;
-    border:solid 0.5rem blue;
-    background:white;
-    color:blue;
+    border: solid 0.5rem blue;
+    background: white;
+    color: blue;
 }
 
-.btn:hover{
+.btn:hover {
     background: blue;
     color: white;
     transition: 0.5s ease all;
-    transform: scale(1, 1);
+    transform: scale(1.2, 1.2);
     box-shadow: 0 10px 10px black;
 }
 
 /*---------------------------------*/
-
-
-/*---------------------------------*/
-/* estilos respuesta.html header */
+/* estilos respuesta.html */
+/* estilos respuesta.html main */
 .logo_din--respuesta {
-    width: 30rem;
-    left: 50%;
+    width: 20rem;
+    left:50%;
     position: relative;
     top: 0rem;
     transform: translate(-50%, 0%);
 }
 
-/* estilos respuesta.html section */
+.logo_din--respuesta:hover {
+    box-shadow: 0 40px 20px black;
+}
+
 .mensaje1 {
-    margin: 6rem auto;
-    padding: 2rem 3rem;
+    margin: 6rem auto 2rem auto;
+    padding: 0 1rem;
     text-align: center;
     font-family: 'Roboto-black', sans-serif;
     font-size: 3rem;
@@ -491,13 +494,11 @@ main ul li a.active {
 
 .mensaje2 {
     margin: auto;
-    padding: 1rem 8rem 8rem 8rem;
+    padding: 0 8rem 8rem 8rem;
     text-align: center;
     font-family: 'Roboto-black', sans-serif;
     font-size: 2rem;
 }
-
-/*---------------------------------*/
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /*---ESTILO FOOTER---*/
@@ -515,7 +516,6 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -526,21 +526,27 @@ footer {
 }
 
 .footer_social {
-    margin: 3rem auto;
+    margin: 2rem auto;
 }
 
 .footer_datos {
-    margin: 1rem auto;
+    margin: 0.5rem auto 0 auto;
     right: 0;
-    font-size: 2rem;
+    font-size: 1.75rem;
+    line-height: 1.25rem;
     font-weight: bold;
-    padding: 2rem 2rem 0 2rem;
+    padding: 0 2rem 0 2rem;
     text-align: left;
 }
 
 .social_logo {
-    height: 7rem;
-    padding: 0.5rem;
+    height: 6rem;
+    padding: 0.5rem 1rem;
+    opacity: 25%;
+}
+
+.social_logo:hover {
+    opacity: 100%;
 }
 
 .social_item {
@@ -549,7 +555,7 @@ footer {
 }
 
 .whatsapp_logo {
-    height: 6rem;
+    height: 5rem;
     padding: 0;
 }
 
@@ -566,7 +572,6 @@ footer {
 
 /*------------------------------------------------------------*/
 
-
 /*-----MEDIA QUERIES-----*/
 /*--TABLET--*/
 @media screen and (min-width: 768px) {
@@ -581,7 +586,6 @@ footer {
         font-size: 6rem;
         font-weight: bold;
     }
-    /*---------------------------------*/
 
     /*---------------------------------*/
     /* estilos magin.html */
@@ -589,7 +593,6 @@ footer {
     h2 {
         font-size: 6rem;
     }
-    /*---------------------------------*/
 
     /*---------------------------------*/
     /* estilos servicios.html */
@@ -636,7 +639,6 @@ footer {
         display: block;
         max-width: 1200px;
     }
-    /*---------------------------------*/
 
     /*---------------------------------*/
     /* estilos contacto.html */
@@ -648,22 +650,27 @@ footer {
         letter-spacing: 1rem;
         font-weight: bold;
     }
-    /*---------------------------------*/
-
 
     /*---------------------------------*/
     /* estilos respuesta.html */
-    /* estilos respuesta.html section */
+    /* estilos respuesta.html main */
+    .logo_din--respuesta {
+        width: 30rem;
+    }
+
     .mensaje1 {
+        margin: 10rem auto 6rem auto;
+        padding: 0rem 3rem;
         font-size: 5rem;
     }
 
     .mensaje2 {
         font-size: 3rem;
     }
-    /*---------------------------------*/
+
 }
 
+/*-----MEDIA QUERIES-----*/
 /*--DESKTOP--*/
 @media screen and (min-width:1024px) {
     header label {
@@ -706,7 +713,7 @@ footer {
     .menu_item {
         border: none;
         margin: 0 1rem 0 1rem;
-        border-radius: 1.5rem;
+        border-radius: 1rem;
     }
 
 
@@ -723,7 +730,6 @@ footer {
         display: block;
         margin: 0 auto 0 0;
     }
-    /*---------------------------------*/
 
     /*---------------------------------*/
     /* estilos magin.html */
@@ -731,7 +737,6 @@ footer {
     h2 {
         font-size: 8rem;
     }
-    /*---------------------------------*/
 
     /*---------------------------------*/
     /* estilos contacto.html */
@@ -740,7 +745,6 @@ footer {
         margin: 4rem auto;
         font-size: 8rem;
     }
-    /*---------------------------------*/
 
     /*---------------------------------*/
     /* estilos respuesta.html */
@@ -752,5 +756,5 @@ footer {
     .mensaje2 {
         font-size: 3rem;
     }
-    /*---------------------------------*/
+
 }

@@ -1,0 +1,6 @@
+@mixin marco( $radio , $eje ) {
+    border-radius: $radio;
+    box-shadow: $eje $eje ($eje*2) $black;
+    background-color: $border;
+    border: solid 1rem $border;
+}

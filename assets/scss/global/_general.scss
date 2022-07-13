@@ -16,10 +16,10 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Roboto-black', sans-serif;
+    font-family: $font-principal;
 
     body {
-        background-color: #e6e6e6;
+        background-color: $primario;
         padding: 10rem 0rem 0 0rem;
 
         @media screen and (min-width:1024px) {
@@ -40,16 +40,16 @@ html {
 h1 {
     text-align: center;
     margin: 5rem auto 4rem auto;
-    font-family: 'NotoSans-ThinItalic'arial, sans-serif, italic;
-    font-size: 4rem;
+    font-family: $font-title;
+    font-size: map-get($font-size, "small");
     font-weight: bold;
 }
 
 h2 {
     text-align: center;
     margin: 5rem auto 4rem auto;
-    font-family: 'NotoSans-ThinItalic'arial, sans-serif;
-    font-size: 4rem;
+    font-family: $font-title;
+    font-size: map-get($font-size, "small");
     font-weight: bold;
 }
 
@@ -59,12 +59,12 @@ h2 {
 @media screen and (min-width: 768px) {
     h1 {
         margin: 7rem auto 6rem auto;
-        font-size: 6rem;
+        font-size: map-get($font-size, "medium");
     }
 
     h2 {
         margin: 7rem auto 6rem auto;
-        font-size: 6rem;
+        font-size: map-get($font-size, "medium");
     }
 }
 
@@ -73,11 +73,11 @@ h2 {
 @media screen and (min-width:1024px) {
     h1 {
         margin: 10rem auto 6rem auto;
-        font-size: 8rem;
+        font-size: map-get($font-size, "large");
     }
 
     h2 {
         margin: 10rem auto 6rem auto;
-        font-size: 8rem;
+        font-size: map-get($font-size, "large");
     }
 }

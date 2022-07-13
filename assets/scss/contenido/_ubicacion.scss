@@ -3,10 +3,8 @@
 .conteiner {
     .row {
         .img_ubicacion {
-            background-color: white;
-            border: solid 1rem gray;
-            box-shadow: 0 10px 10px black;
-            border-radius: 2rem;
+            @include marco ( 2rem , 1rem );
+            background-color: $white;
         }
     }
 }
@@ -14,10 +12,8 @@
 .conteiner {
     .row {
         .carousel {
-            background-color: white;
-            border: solid 1rem gray;
-            box-shadow: 0 10px 10px black;
-            border-radius: 2rem;
+            @include marco ( 2rem , 1rem );
+            background-color: $white;
 
             .carousel-control-prev-icon {
                 height: 6rem;

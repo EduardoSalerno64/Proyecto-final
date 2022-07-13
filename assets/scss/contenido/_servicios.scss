@@ -3,8 +3,8 @@
 h3 {
     text-align: center;
     margin: 2rem auto;
-    font-family: 'NotoSans-ThinItalic'arial, sans-serif;
-    font-size: 3rem;
+    font-family: $font-title;
+    font-size: map-get($font-size, "ssmall") + 1 ;
     font-weight: bold;
 }
 
@@ -15,7 +15,7 @@ h3 {
         width: auto;
         max-width: 1200px;
         text-align: center;
-        font-size: 2rem;
+        font-size: map-get($font-size, "ssmall");
         line-height: 3rem;
         text-align: left;
     }
@@ -26,7 +26,7 @@ h3 {
         width: auto;
         max-width: 1200px;
         text-align: center;
-        font-size: 2.5rem;
+        font-size: map-get($font-size, "ssmall") + 0.5;
         line-height: 3rem;
         text-align: left;
 
@@ -38,10 +38,25 @@ h3 {
                 padding: 0.5rem;
                 width: auto;
                 margin: 0 auto;
-                font-size: 2rem;
+                font-size: map-get($font-size, "ssmall");
                 line-height: 2.5rem;
                 text-align: left;
-                color: black;
+                color: $text-color;
+
+                a {
+                    text-decoration: none;
+                    color: $text-color;
+
+                    &:hover,
+                    &.active {
+                        border: solid 1px black;
+                        background: $white;
+                        color: red;
+                        transition: 0.5s ease all;
+                        transform: scale(1.2, 1.2);
+                        box-shadow: 0 10px 10px black;
+                    }
+                }
             }
         }
     }
@@ -64,64 +79,47 @@ h3 {
         "ejemplos_7"
         "ejemplos_8"
         "ejemplos_9"
-        "ejemplos_10"
-    ;
+        "ejemplos_10";
+
+        & >* {
+            @include marco ( 2rem , 1rem );
+            padding: 2rem;
+            background-color: white;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            width: auto;
+        }
+        
 
     .title_her {
         padding: 0 1rem 1rem 1rem;
         text-align: left;
-        font-family: 'NotoSans-ThinItalic'arial, sans-serif;
-        font-size: 2rem;
+        font-family: $font-title;
+        font-size: map-get($font-size, "ssmall");
         font-weight: bold;
     }
 }
 
-.serv_item a {
-    text-decoration: none;
-    color: black;
-}
-
-main ul li a:hover,
-main ul li a.active {
-    border: solid 1px black;
-    background: white;
-    color: red;
-    transition: 0.5s ease all;
-    transform: scale(1.2, 1.2);
-    box-shadow: 0 10px 10px black;
-}
-
-.ejemplos>* {
-    border-radius: 2rem;
-    padding: 2rem;
-    background-color: white;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    width: auto;
-    border: solid 1rem darkgray;
-    box-shadow: 0 10px 10px black;
-}
 
 // mod estilo tabla de bootstrap
 #carac {
     display: none;
     padding: 2rem;
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: map-get($font-size, "ssmall");
     line-height: 2rem;
 
     .table {
-        border: solid 1rem gray;
-        background-color: white;
-        box-shadow: 0 10px 10px black;
+        @include marco ( 0rem , 1rem );
+        background-color: $white;
 
         .table thead th {
             vertical-align: top;
         }
 
         .table .thead-light th {
-            background-color: darkgray;
+            background-color: $secundario;
         }
     }
 }
@@ -130,7 +128,7 @@ main ul li a.active {
 // TABLET
 @media screen and (min-width: 768px) {
     h3 {
-        font-size: 3.5rem;
+        font-size: map-get($font-size, "small") - 0.5;
     }
 
     .ejemplos {
@@ -150,20 +148,23 @@ main ul li a.active {
         ;
     }
 
-    .izq:hover {
-        transition: 1s ease-in all;
-        transform: translate(50%, 0) scale(1.5, 1.5);
-        box-shadow: 0 10px 10px black;
-    }
-
-    .der:hover {
-        transition: 1s ease-in all;
-        transform: translate(-50%, 0) scale(1.5, 1.5);
-        box-shadow: 0 10px 10px black;
-    }
+.izq {
+	&:hover {
+		transition: 1s ease-in all;
+		transform: translate(50%, 0) scale(1.5, 1.5);
+		box-shadow: 0 10px 10px black;
+	}
+}
+.der {
+	&:hover {
+		transition: 1s ease-in all;
+		transform: translate(-50%, 0) scale(1.5, 1.5);
+		box-shadow: 0 10px 10px black;
+	}
+}
 
     .title_her {
-        font-size: 2.5rem;
+        font-size: map-get($font-size, "ssmall") + 0.5;
     }
 
     #carac {

@@ -4,18 +4,17 @@
     position: relative;
     top: 0rem;
     transform: translate(-50%, 0%);
-}
-
-.logo_din--respuesta:hover {
-    box-shadow: 0 40px 20px black;
+    &:hover {
+        box-shadow: 2rem 2rem 4rem black;
+    }
 }
 
 .mensaje1 {
     margin: 6rem auto 2rem auto;
     padding: 0 1rem;
     text-align: center;
-    font-family: 'Roboto-black', sans-serif;
-    font-size: 3rem;
+    font-family: $font-principal;
+    font-size: map-get($font-size, "ssmall") + 1;
     font-weight: bold;
 }
 
@@ -23,8 +22,8 @@
     margin: auto;
     padding: 0 8rem 8rem 8rem;
     text-align: center;
-    font-family: 'Roboto-black', sans-serif;
-    font-size: 2rem;
+    font-family: $font-principal;
+    font-size: map-get($font-size, "small");
 }
 
 // MEDIA QUERIES
@@ -37,11 +36,11 @@
     .mensaje1 {
         margin: 10rem auto 6rem auto;
         padding: 0rem 3rem;
-        font-size: 5rem;
+        font-size: map-get($font-size, "small") + 1;
     }
 
     .mensaje2 {
-        font-size: 3rem;
+        font-size: map-get($font-size, "ssmall")+ 1;
     }
 
 }
@@ -49,11 +48,11 @@
 // DESKTOP
 @media screen and (min-width:1024px) {
     .mensaje1 {
-        font-size: 5rem;
+        font-size: map-get($font-size, "small") + 1;
     }
 
     .mensaje2 {
-        font-size: 3rem;
+        font-size: map-get($font-size, "ssmall") + 1;
     }
 
 }

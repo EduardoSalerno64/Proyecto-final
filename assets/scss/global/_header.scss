@@ -1,7 +1,7 @@
 // Se aplico flex y box modeling
 .header {
     z-index: 100;
-    background-color: white;
+    background-color: $white;
     height: 10rem;
     width: 100%;
     position: fixed;
@@ -15,12 +15,12 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-}
 
-.nav a {
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
+    a {
+        color: $text-color;
+        font-weight: bold;
+        text-decoration: none;
+    }
 }
 
 .logo {
@@ -35,7 +35,7 @@
     top: 10rem;
     width: 100%;
     list-style: none;
-    background-color: white;
+    background-color: $white;
     position: fixed;
     text-align: center;
     transition: all .5s;
@@ -47,9 +47,14 @@
     margin: 0;
     padding: 1rem;
     text-transform: uppercase;
-    border-top: 1px solid darkgrey;
-    border-bottom: 1px solid darkgrey;
+    border-top: 1px solid $secundario;
+    border-bottom: 1px solid $secundario;
     line-height: 3rem;
+
+    &:hover {
+        background-color: $secundario;
+        transition: 0.5s ease all;
+    }
 }
 
 li a:hover,
@@ -58,43 +63,39 @@ li a.active {
     color: rgb(187, 243, 187);
 }
 
-.menu_item:hover {
-    background-color: darkgray;
-    transition: 0.5s ease all;
-}
-
 .checkbtn {
-    color: black;
-    background-color: white;
-    font-size: 4rem;
+    color: $text-color;
+    background-color: $white;
+    font-size: map-get($font-size, "small");
     border: none;
     padding: 1rem 2rem 1rem 2rem;
     display: block;
     margin-right: 1rem;
     margin-bottom: 0;
     border-radius: 1.5rem;
-}
-
-.checkbtn:hover {
-    background-color: darkgray;
-}
-
-.checkbtn {
     display: block;
+
+    &:hover {
+        background-color: $secundario;
+    }
 }
 
 #menu_boton {
     display: none;
+
+    &:checked~ul {
+        left: 0;
+    }
 }
 
-#menu_boton:checked~ul {
-    left: 0;
-}
-
-header label:hover {
-    cursor: pointer;
-    float: right;
-    background-color: darkgray;
+header {
+	label {
+		&:hover {
+			cursor: pointer;
+			float: right;
+			background-color: $secundario;
+		}
+	}
 }
 
 // MEDIA QUERIES
@@ -112,10 +113,6 @@ header label:hover {
         height: 14rem;
     }
 
-    .menu {
-        top: 14rem;
-    }
-
     .logo {
         height: 14rem;
     }
@@ -125,6 +122,7 @@ header label:hover {
     }
 
     .menu {
+        top: 14rem;
         display: flex;
         flex-direction: row;
         margin-right: 2rem;

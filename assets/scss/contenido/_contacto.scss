@@ -2,25 +2,23 @@
 // mod estilo de bootstrap
 .respuesta {
     .hoja {
-        border: solid 1rem grey;
-        border-radius: 2rem;
-        background-color: darkgrey;
+        @include marco ( 2rem , 1rem );
+        background-color: $secundario;
         padding: 2rem;
         margin-bottom: 4rem;
-        box-shadow: 0 10px 10px black;
 
         .form-group {
             text-align: center;
             padding: 1rem;
-            font-family: 'NotoSans-ThinItalic'arial, sans-serif;
-            font-size: 2rem;
+            font-family: $font-title;
+            font-size: map-get($font-size, "ssmall");
             font-weight: bold;
 
             .form-control {
                 text-align: start;
                 padding: 1rem;
-                font-family: 'NotoSans-ThinItalic'arial, sans-serif;
-                font-size: 2rem;
+                font-family: $font-title;
+                font-size: map-get($font-size, "ssmall");
                 border-radius: 1rem;
             }
         }
@@ -33,21 +31,23 @@
             .btn-boton {
                 margin: 1rem 1rem 1rem 1rem;
                 padding: 1rem;
-                font-family: 'NotoSans-ThinItalic'arial, sans-serif;
-                font-size: 2rem;
+                font-family: $font-title;
+                font-size: map-get($font-size, "ssmall");
                 font-weight: bold;
                 border-radius: 1rem;
-                border: solid 0.5rem blue;
-                background: white;
-                color: blue;
+                border: solid 0.5rem $boton-contacto;
+                background: $white;
+                color: $boton-contacto;
             }
+        }
 
-            .btn:hover {
-                background: blue;
-                color: white;
+        .btn {
+            &:hover {
+                background: $boton-contacto;
+                color: $white;
                 transition: 0.5s ease all;
                 transform: scale(1.2, 1.2);
-                box-shadow: 0 10px 10px black;
+                box-shadow: 1rem 1rem 2rem black;
             }
         }
     }

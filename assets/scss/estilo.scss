@@ -1,9 +1,14 @@
-// definiciones globales
+// utilidades
+@import 'utilidades/variables';
+@import 'utilidades/mixins';
+@import 'utilidades/maps';
+
+// global
 @import 'global/general';
 @import 'global/footer';
 @import 'global/header';
 
-// definiciones contenido
+// contenido
 @import 'contenido/index';
 @import 'contenido/magin';
 @import 'contenido/servicios';

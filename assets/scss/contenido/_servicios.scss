@@ -4,7 +4,7 @@ h3 {
     text-align: center;
     margin: 2rem auto;
     font-family: $font-title;
-    font-size: map-get($font-size, "ssmall") + 1 ;
+    font-size: map-get($font-size, "ssmall") + 1;
     font-weight: bold;
 }
 
@@ -81,16 +81,16 @@ h3 {
         "ejemplos_9"
         "ejemplos_10";
 
-        & >* {
-            @include marco ( 2rem , 1rem );
-            padding: 2rem;
-            background-color: white;
-            display: flex;
-            flex-direction: column-reverse;
-            justify-content: center;
-            width: auto;
-        }
-        
+    &>* {
+        @include marco (2rem, 1rem);
+        padding: 2rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: auto;
+    }
+
 
     .title_her {
         padding: 0 1rem 1rem 1rem;
@@ -111,7 +111,7 @@ h3 {
     line-height: 2rem;
 
     .table {
-        @include marco ( 0rem , 1rem );
+        @include marco (0rem, 1rem);
         background-color: $white;
 
         .table thead th {
@@ -148,20 +148,21 @@ h3 {
         ;
     }
 
-.izq {
-	&:hover {
-		transition: 1s ease-in all;
-		transform: translate(50%, 0) scale(1.5, 1.5);
-		box-shadow: 0 10px 10px black;
-	}
-}
-.der {
-	&:hover {
-		transition: 1s ease-in all;
-		transform: translate(-50%, 0) scale(1.5, 1.5);
-		box-shadow: 0 10px 10px black;
-	}
-}
+    .izq {
+        &:hover {
+            transition: 1s ease-in all;
+            transform: translate(50%, 0) scale(1.5, 1.5);
+            box-shadow: 0 10px 10px black;
+        }
+    }
+
+    .der {
+        &:hover {
+            transition: 1s ease-in all;
+            transform: translate(-50%, 0) scale(1.5, 1.5);
+            box-shadow: 0 10px 10px black;
+        }
+    }
 
     .title_her {
         font-size: map-get($font-size, "ssmall") + 0.5;

@@ -3,7 +3,7 @@
 .conteiner {
     .row {
         .carousel {
-            @include marco ( 2rem , 1rem );
+            @include marco (2rem, 1rem);
             background-color: $white;
 
             .carousel-control-prev-icon {

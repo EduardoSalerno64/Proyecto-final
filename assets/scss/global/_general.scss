@@ -22,12 +22,6 @@ html {
         background-color: $primario;
         padding: 10rem 0rem 0 0rem;
 
-        @media screen and (min-width:1024px) {
-            // body {
-            //     padding: 14rem 0rem 0 0rem;
-            // }
-        }
-
         #container {
             display: grid;
             height: 100vh;

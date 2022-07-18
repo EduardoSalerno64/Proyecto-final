@@ -2,7 +2,7 @@
 // mod estilo de bootstrap
 .respuesta {
     .hoja {
-        @include marco ( 2rem , 1rem );
+        @include marco (2rem, 1rem);
         background-color: $secundario;
         padding: 2rem;
 
@@ -65,10 +65,12 @@
     50% {
         opacity: 1;
     }
-}.conteiner {
+}
+
+.conteiner {
     .row {
         .img_ubicacion {
-            @include marco ( 2rem , 1rem );
+            @include marco (2rem, 1rem);
             background-color: $white;
         }
     }

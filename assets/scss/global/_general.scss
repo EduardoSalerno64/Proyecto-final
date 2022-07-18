@@ -23,9 +23,9 @@ html {
         padding: 10rem 0rem 0 0rem;
 
         @media screen and (min-width:1024px) {
-            body {
-                padding: 14rem 0rem 0 0rem;
-            }
+            // body {
+            //     padding: 14rem 0rem 0 0rem;
+            // }
         }
 
         #container {
@@ -39,7 +39,7 @@ html {
 
 h1 {
     text-align: center;
-    margin: 5rem auto 4rem auto;
+    margin: 4rem auto 4rem auto;
     font-family: $font-title;
     font-size: map-get($font-size, "small");
     font-weight: bold;
@@ -47,7 +47,7 @@ h1 {
 
 h2 {
     text-align: center;
-    margin: 5rem auto 4rem auto;
+    margin: 4rem auto 4rem auto;
     font-family: $font-title;
     font-size: map-get($font-size, "small");
     font-weight: bold;
@@ -58,12 +58,12 @@ h2 {
 // TABLET
 @media screen and (min-width: 768px) {
     h1 {
-        margin: 7rem auto 6rem auto;
+        margin: 5rem auto 5rem auto;
         font-size: map-get($font-size, "medium");
     }
 
     h2 {
-        margin: 7rem auto 6rem auto;
+        margin: 5rem auto 5rem auto;
         font-size: map-get($font-size, "medium");
     }
 }
@@ -72,12 +72,12 @@ h2 {
 // DESKTOP
 @media screen and (min-width:1024px) {
     h1 {
-        margin: 10rem auto 6rem auto;
+        margin: 6rem auto 6rem auto;
         font-size: map-get($font-size, "large");
     }
 
     h2 {
-        margin: 10rem auto 6rem auto;
+        margin: 6rem auto 6rem auto;
         font-size: map-get($font-size, "large");
     }
 }

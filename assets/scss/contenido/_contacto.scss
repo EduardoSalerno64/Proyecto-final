@@ -5,7 +5,6 @@
         @include marco ( 2rem , 1rem );
         background-color: $secundario;
         padding: 2rem;
-        margin-bottom: 4rem;
 
         .form-group {
             text-align: center;
@@ -65,5 +64,12 @@
 
     50% {
         opacity: 1;
+    }
+}.conteiner {
+    .row {
+        .img_ubicacion {
+            @include marco ( 2rem , 1rem );
+            background-color: $white;
+        }
     }
 }

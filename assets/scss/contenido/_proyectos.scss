@@ -2,15 +2,6 @@
 // mod estilo de bootstrap
 .conteiner {
     .row {
-        .img_ubicacion {
-            @include marco ( 2rem , 1rem );
-            background-color: $white;
-        }
-    }
-}
-
-.conteiner {
-    .row {
         .carousel {
             @include marco ( 2rem , 1rem );
             background-color: $white;

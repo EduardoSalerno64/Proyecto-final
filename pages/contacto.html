@@ -8,10 +8,12 @@
 
     <!-- Seo -->
     <meta name="title" content="Magin - Contacto">
-    <meta name="description" content="Magin Contacto - Estudio de ingenieria especializado en desarrollo de productos y diseño de herramentales para la producción">
-    <meta name="keywords" content="diseño, productos, impresion 3D, herramientas, inyeccion de plasticos, corte y estampado de chapa">
+    <meta name="description"
+        content="Magin Contacto - Estudio de ingenieria especializado en desarrollo de productos y diseño de herramentales para la producción">
+    <meta name="keywords"
+        content="diseño, productos, impresion 3D, herramientas, inyeccion de plasticos, corte y estampado de chapa">
 
-    <!-- Animate & Fontawesome -->    
+    <!-- Animate & Fontawesome -->
     <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
@@ -41,33 +43,32 @@
                     <i class="fas fa-bars"></i>
                 </label>
                 <ul class="menu">
-                    <li class="menu_item"><a href="../index.html">Home</a></li>
+                    <li class="menu_item"><a href="../index.html">Inicio</a></li>
                     <li class="menu_item"><a href="magin.html">Nosotros</a></li>
                     <li class="menu_item"><a href="servicios.html">Servicios</a></li>
-                    <li class="menu_item"><a href="ubicacion.html">Ubicación</a></li>
-                    <li class="menu_item"><a href="contacto.html">Contacto</a></li>
+                    <li class="menu_item"><a href="proyectos.html">Diseños</a></li>
+                    <li class="menu_item selected"><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!-- contenido información de contacto -->
+        <!-- información de contacto y ubicacion con bootsrap-->
         <section>
             <h2 class="contacto animate__animated animate__zoomIn">CONTACTO</h2>
         </section>
 
-        <!-- formulario con bootsrap -->
         <main>
             <div class="respuesta aparecer col-12  d-flex justify-content-center">
                 <div class="hoja">
                     <form action="respuesta.html" method="post">
                         <div class="form-group">
                             <label for="formGroupExampleInput">Nombre y Apellido</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput"
+                            <input type="text" class="form-control" id="formGroupExampleInput" required
                                 placeholder="Escriba su Nombre y Apellido">
                         </div>
                         <div class="form-group">
                             <label for="formGroupExampleInput">Empresa</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput"
+                            <input type="text" class="form-control" id="formGroupExampleInput" required
                                 placeholder="Nombre o Razón Social">
                         </div>
                         <div class="form-group">
@@ -77,7 +78,7 @@
                         </div>
                         <div class="form-group">
                             <label for="formGroupExampleInput">E-mail</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput"
+                            <input type="text" class="form-control" id="formGroupExampleInput" required
                                 placeholder="Escriba su E-mail">
                         </div>
                         <div class="form-group">
@@ -90,6 +91,25 @@
                             <input class="col-4 btn btn-boton" type="submit" value="Enviar">
                         </div>
                     </form>
+                </div>
+            </div>
+        </main>
+
+        <section>
+            <h2 class="animate__animated animate__zoomIn">UBICACIÓN</h2>
+        </section>
+
+        <main>
+            <div class="conteiner">
+                <div class="row mb-5">
+                    <div class="col-1 col-lg-2"></div>
+                    <div class=" col-10 col-lg-8 img_ubicacion">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2093527461016!2d-58.571035984919895!3d-34.59886728046072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb830ff903c83%3A0x105bb4ddc3046c63!2sBonifacini%205100%2C%20B1678CZN%20Caseros%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1655732208514!5m2!1ses!2sar"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-1 col-lg-2"></div>
                 </div>
             </div>
         </main>

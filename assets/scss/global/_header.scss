@@ -55,12 +55,16 @@
         background-color: $secundario;
         transition: 0.5s ease all;
     }
+    
 }
 
-li a:hover,
-li a.active {
+.selected {
+    background-color: $secundario;
+}
+
+li a:hover{
     background: none;
-    color: rgb(187, 243, 187);
+    color: $white;
 }
 
 .checkbtn {
@@ -105,24 +109,24 @@ header {
         display: none;
     }
 
-    body {
-        padding: 14rem 0rem 0 0rem;
-    }
+    // body {
+    //     padding: 14rem 0rem 0 0rem;
+    // }
 
-    .header {
-        height: 14rem;
-    }
+    // .header {
+    //     height: 14rem;
+    // }
 
-    .logo {
-        height: 14rem;
-    }
+    // .logo {
+    //     height: 14rem;
+    // }
 
     .checkbtn {
         display: none;
     }
 
     .menu {
-        top: 14rem;
+        // top: 14rem;
         display: flex;
         flex-direction: row;
         margin-right: 2rem;

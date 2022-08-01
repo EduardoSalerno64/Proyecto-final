@@ -1,8 +1,9 @@
 // ESTILO MAIN
 // mod estilo main de bootstrap
 .main_cuerpo {
-    .conteiner {
+    .contenido {
         .row {
+            max-width: 1600px;
             .parrafo {
                 @include marco (2rem, 1rem);
                 padding: 2rem 4rem 2rem 4rem;

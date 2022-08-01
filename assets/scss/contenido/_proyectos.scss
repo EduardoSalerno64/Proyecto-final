@@ -1,6 +1,31 @@
 // ESTILO MAIN
 // mod estilo de bootstrap
-.conteiner {
+.b-proyectos {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url("images/../../img/bg-proyectos.jpg") center / cover;
+        opacity: $opacity2;
+    }
+}
+
+.nota {
+    padding: 0 4rem 0rem 4rem;
+    margin: 0 auto;
+    width: auto;
+    max-width: 1400px;
+    text-align: center;
+    font-size: map-get($font-size, "ssmall");
+    line-height: 3rem;
+    text-align: left;
+}
+.galeria {
+    padding: 6rem 0;
     .row {
         .carousel {
             @include marco (2rem, 1rem);

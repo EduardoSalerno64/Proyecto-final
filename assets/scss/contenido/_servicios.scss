@@ -4,7 +4,7 @@ h3 {
     text-align: center;
     margin: 2rem auto;
     font-family: $font-title;
-    font-size: map-get($font-size, "ssmall") + 1;
+    font-size: map-get($font-size, "ssmall");
     font-weight: bold;
 }
 
@@ -13,7 +13,7 @@ h3 {
         padding: 0 4rem 4rem 4rem;
         margin: 0 auto;
         width: auto;
-        max-width: 1200px;
+        max-width: 1600px;
         text-align: center;
         font-size: map-get($font-size, "ssmall");
         line-height: 3rem;
@@ -24,7 +24,7 @@ h3 {
         padding: 4rem;
         margin: 0 auto;
         width: auto;
-        max-width: 1200px;
+        max-width: 1600px;
         text-align: center;
         font-size: map-get($font-size, "ssmall") + 0.5;
         line-height: 3rem;
@@ -40,7 +40,7 @@ h3 {
                 margin: 0 auto;
                 font-size: map-get($font-size, "ssmall");
                 line-height: 2.5rem;
-                text-align: left;
+                text-align: center;
                 color: $text-color;
 
                 a {
@@ -63,12 +63,13 @@ h3 {
 }
 
 .ejemplos {
+    max-width: 1600px;
     margin: auto;
     padding: 2rem;
     display: grid;
     grid-template-rows: repeat(10, auto);
     height: auto;
-    gap: 2rem;
+    gap: 3rem;
     grid-area:
         "ejemplos_1"
         "ejemplos_2"
@@ -92,7 +93,8 @@ h3 {
     }
 
     .title_her {
-        padding: 0 1rem 1rem 1rem;
+        margin-bottom: 0;
+        padding: 0 1rem;
         text-align: left;
         font-family: $font-title;
         font-size: map-get($font-size, "ssmall");
@@ -126,17 +128,18 @@ h3 {
 // TABLET
 @media screen and (min-width: 768px) {
     h3 {
-        font-size: map-get($font-size, "small") - 0.5;
+        font-size: map-get($font-size, "medium");
     }
 
     .ejemplos {
         margin: auto;
-        padding: 2rem 4rem 2rem 2rem;
+        padding: 3rem;
         display: grid;
+        justify-content: center;
         grid-template-rows: repeat(5, auto);
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 45% 45%;
         height: auto;
-        gap: 2rem;
+        gap: 10rem;
         grid-area:
             "ejemplos_1 ejemplos_2"
             "ejemplos_3 ejemplos_4"
@@ -148,6 +151,7 @@ h3 {
 
     .izq {
         &:hover {
+            z-index: 200;
             transition: 1s ease-in all;
             transform: translate(50%, 0) scale(1.5, 1.5);
             box-shadow: 0 10px 10px black;
@@ -156,6 +160,7 @@ h3 {
 
     .der {
         &:hover {
+            z-index: 200;
             transition: 1s ease-in all;
             transform: translate(-50%, 0) scale(1.5, 1.5);
             box-shadow: 0 10px 10px black;

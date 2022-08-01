@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: 'Roboto-black';
-    src: url('../../font/Roboto-Black.ttf');
+    src: url('../font/Roboto-Black.ttf');
 }
 
 @font-face {
     font-family: 'NotoSans-ThinItalic';
-    src: url('../../font/NotoSans-ThinItalic.ttf');
+    src: url('../font/NotoSans-ThinItalic.ttf');
 }
 
 html {
@@ -27,17 +27,15 @@ html {
 h1 {
     text-align: center;
     margin: 3rem auto 3rem auto;
-    font-family: $font-title;
+    font-family: $font-principal;
     font-size: map-get($font-size, "small");
-    font-weight: bold;
 }
 
 h2 {
     text-align: center;
     margin: 3rem auto 3rem auto;
-    font-family: $font-title;
+    font-family: $font-principal;
     font-size: map-get($font-size, "small");
-    font-weight: bold;
 }
 
 // MEDIA QUERIES
